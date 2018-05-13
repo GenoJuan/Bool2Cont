@@ -1,0 +1,9 @@
+targets, factors
+CYCD31, (!E2Fa & !MYB3R14) | (!E2Fa & E2Fc & !MYB77) | (RBR & !MYB3R14) | (RBR & E2Fc & !MYB77)
+RBR, (!CYCD31 & MYB3R14) | (!CYCD31 & !RBR & E2Fa) | (MYB3R14 & KRP1) | (!RBR & E2Fa & KRP1)
+E2Fa, (!E2Fc & !MYB77 & !MYB3R14) | (E2Fa & !MYB77 & !MYB3R14) | (RBR & E2Fa & E2Fc & !MYB77)
+E2Fc, (!CYCD31 & MYB3R14) | (!CYCD31 & !RBR & E2Fa) | (MYB3R14 & KRP1) | (!E2Fa & E2Fc & !MYB77 & MYB3R14) | (!RBR & E2Fa & KRP1) | (RBR & E2Fc & !MYB77 & MYB3R14)
+MYB77, (!RBR & E2Fa)
+MYB3R14, (MYB3R14 & CYCB11 & !KRP1) | (MYB77)
+CYCB11, (!E2Fc & MYB3R14) | (MYB77) | (!RBR & E2Fa & !E2Fc) | (!RBR & E2Fa & MYB3R14)
+KRP1, (!E2Fa & MYB77 & !MYB3R14) | (!E2Fa & E2Fc & !MYB77 & MYB3R14) | (RBR & MYB77 & !MYB3R14) | (RBR & E2Fc & !MYB77 & MYB3R14)
